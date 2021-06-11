@@ -1,0 +1,60 @@
+.newsletter{
+    width: 100%;
+    background: rgb(240, 241, 241);
+    height: 20vh;
+    margin-top: 2rem;
+    align-items: center;
+   .news-container{
+       width: 70%;
+       margin: auto;
+       text-align: center;
+       z-index: 1;
+       height: 20vh;
+       background: url(../Images/Gallery/casio8.jpg);
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: 10%;
+       h1{
+           font-size: 2rem;
+           font-weight: 700;
+           color: #004e98;
+           padding: 1rem;
+           opacity: 0.9;
+       }
+       form{
+           input[type=text] {
+             width: 40%;
+             height: 6vh;
+             margin: auto;
+             padding:0 1rem;
+             color: #004e98;
+             border-top: none;
+             border-left: none;
+             border-right: none;
+             border-bottom: 2px solid #004e98;
+             outline: none;
+             opacity: 0.6;
+             transition: all .5s ease-in-out;
+             &:focus, &:hover {
+                opacity: 1;
+              }
+           }
+           button{
+            height: 6vh;
+            color: #004e98;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px solid #004e98; 
+            background: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: all .5s ease-in-out;
+            &:hover, &:focus{
+                background: #fff;
+            }
+           }
+       }
+   }
+}

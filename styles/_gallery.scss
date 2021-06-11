@@ -1,0 +1,29 @@
+.gallery {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    .grid-item1 {
+      text-align: center;
+      border-radius: 10px;
+      border: 1px transparent #004e98;
+      padding: 1.5rem;
+      background: white;
+      position: relative;
+      align-items: flex-end;
+      transition: 0.4s ease-out;
+      box-shadow: 0px 7px 10px rgba(black, 0.5);
+      &:hover {
+        transform: translateY(10px);
+      }
+      img {
+        width: 100%;
+        cursor: pointer;
+      
+      }
+    }
+  }
+}
