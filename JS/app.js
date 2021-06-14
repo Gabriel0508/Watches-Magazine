@@ -30,9 +30,8 @@ for (var but of button) {
     noti.setAttribute("data-count", add + 1);
     noti.classList.add("zero");
 
-    // image --animation to cart ---//
-    
 			var image = e.target.parentNode.querySelector('#item-image');
+      var span = e.target.parentNode.querySelector('span');
 			var s_image = image.cloneNode(false);
 			span.appendChild(s_image);
 			span.classList.add("active");
@@ -40,10 +39,7 @@ for (var but of button) {
 				span.classList.remove("active");
 				span.removeChild(s_image);
 			}, 500); 
-			
-
-
-    // copy and paste //
+		
     var parent = e.target.parentNode;
     var clone = parent.cloneNode(true);
     select.appendChild(clone);
@@ -129,7 +125,7 @@ function addToCartClicked(event) {
   var watchItem = button.parentElement.parentElement;
   var title = watchItem.querySelectorAll("#item-title")[0].innerText;
   var price = watchItem.querySelectorAll("#item-price")[0].innerText;
-  var imageSrc = watchItem.querySelectorAll("#item-image").src;
+  var imageSrc = watchItem.querySelectorAll("#item-image")[0].src;
   addItemToCart(title, price, imageSrc);
   updateCartTotal();
 }

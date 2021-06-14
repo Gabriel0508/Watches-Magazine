@@ -1,0 +1,36 @@
+footer {
+  background-color: #000000;
+  height: 40vh;
+  .footer-container {
+    width: 70%;
+    margin: auto;
+    height: 40vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    .info a,
+    .support a,
+    .community a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      &:hover {
+        text-decoration: underline 1px solid #fff;
+      }
+    }
+    .icons a {
+      color: #fff;
+      padding: 0.5rem;
+      background-color: #c1121f;
+      border-radius: 20px;
+      margin-left: .2rem;
+      transition: all 0.5s ease-in-out;
+      &:hover{
+          border: 1px solid #fff;
+      }
+    }
+  }
+}

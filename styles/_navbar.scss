@@ -56,8 +56,8 @@
         font-size: 1.3rem;
         color: #004e98;
         opacity: 0.6;
-        transition:all .3s ease-in-out;
-        &:focus {
+        transition:all .4s ease-in-out;
+        &:focus, &:hover {
           opacity: 1;
         }
       }
