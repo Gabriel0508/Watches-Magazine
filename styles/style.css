@@ -313,20 +313,58 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-transition: 0.4s ease-out;
-  transition: 0.4s ease-out;
-  -webkit-box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 3px 5px #004e98;
+          box-shadow: 0px 3px 5px #004e98;
+  overflow: hidden;
+  -webkit-transition: border .3s ease-in-out;
+  transition: border .3s ease-in-out;
+  cursor: pointer;
 }
 
-.gallery .grid-container1 .grid-item1:hover {
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
+.gallery .grid-container1 .grid-item1::before, .gallery .grid-container1 .grid-item1::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: scale3d(0, 0, 1);
+          transform: scale3d(0, 0, 1);
+  -webkit-transition: -webkit-transform .3s ease-out 0s;
+  transition: -webkit-transform .3s ease-out 0s;
+  transition: transform .3s ease-out 0s;
+  transition: transform .3s ease-out 0s, -webkit-transform .3s ease-out 0s;
+  background: rgba(240, 245, 252, 0.1);
+  content: '';
+  pointer-events: none;
+}
+
+.gallery .grid-container1 .grid-item1::before {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+
+.gallery .grid-container1 .grid-item1::after {
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+}
+
+.gallery .grid-container1 .grid-item1:hover::before, .gallery .grid-container1 .grid-item1:hover::after, .gallery .grid-container1 .grid-item1:focus::before, .gallery .grid-container1 .grid-item1:focus::after {
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
 }
 
 .gallery .grid-container1 .grid-item1 img {
   width: 100%;
   cursor: pointer;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.gallery .grid-container1 .grid-item1 img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .newsletter {
