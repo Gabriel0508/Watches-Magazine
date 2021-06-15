@@ -34,3 +34,17 @@ footer {
     }
   }
 }
+@media(max-width:900px) {
+  footer{
+    .footer-container{
+      width: 90%;
+      margin: auto;
+      justify-content: center;
+      .info a,
+    .support a,
+    .community a {
+      display: none;
+    }
+    }
+  }
+}

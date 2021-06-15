@@ -45,7 +45,6 @@
           transform: scale3d(1, 1, 1);
         }
       }
-
       img {
         width: 100%;
         cursor: pointer;
@@ -57,6 +56,23 @@
           -webkit-transform: scale(1.1);
           transform: scale(1.1);
         }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 900px) {
+  .gallery{
+    width: 95%;
+    margin: auto;
+    .grid-container1{
+      display: block;
+      justify-content: center;
+      margin: 1rem;
+      .grid-item1{
+      align-items: center;
+      margin: 2rem 0;
       }
     }
   }

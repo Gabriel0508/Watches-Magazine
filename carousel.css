@@ -116,3 +116,10 @@
   #radio5:checked ~ .navigation-auto .auto-btn5{
     background: #40D3DC;
   }
+
+
+  @media(max-width: 900px) {
+    .carousel{
+      display: none;
+    }
+  }

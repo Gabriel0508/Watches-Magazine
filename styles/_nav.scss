@@ -15,7 +15,7 @@
         height: 8vh;
         margin: auto;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         z-index: 1;
         position: sticky;
@@ -31,8 +31,6 @@
               font-size: 1rem;
               margin: .5rem;
             }
-          
-            
           }
         }
         /*
@@ -43,4 +41,22 @@
             transition: all .5s ease-in-out;
         }*/
     }
+}
+
+@media(max-width: 900px) {
+  .nav{
+    .nav-container{
+      width: 100%;
+      .favorite,
+      .cart {
+        font-size: 1rem;
+        a{
+          padding: 0;
+          .angle{
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
 }

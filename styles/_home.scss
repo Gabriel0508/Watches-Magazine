@@ -61,3 +61,15 @@
     }
   }
 }
+
+@media(max-width: 900px) {
+  .home{
+    width: 100%;
+    .categories{
+      float: none;
+      width: 90%;
+      margin: auto;
+    }
+  }
+
+}

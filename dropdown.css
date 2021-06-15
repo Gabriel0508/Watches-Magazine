@@ -35,8 +35,7 @@
 
 .dropdown-content,
 .dropdown-content_,
-.dropdown-content-user
- {
+.dropdown-content-user {
     justify-content: center;
     display: none;
     position: absolute;
@@ -117,10 +116,10 @@
     text-align: center;
     color: #004e98;
     font-size: 1.5rem;
-    margin:.3rem;
+    margin: 0.3rem;
 }
 p {
-    margin: .3rem;
+    margin: 0.3rem;
     text-align: center;
     color: #004e98;
     transition: all 0.25s ease-in-out;
@@ -128,9 +127,9 @@ p {
 p:hover {
     color: #c1121f;
 }
-#item-price{
+#item-price {
     float: right;
-    margin: .5rem;
+    margin: 0.5rem;
     font-weight: 700;
 }
 /*favorite & cart*/
@@ -330,19 +329,19 @@ span a:hover {
 }
 
 .dropdown-content-cart,
-.dropdown-content-favorite{
-  right: 0;
+.dropdown-content-favorite {
+    right: 0;
 }
 
 .dropdown-content-favorite,
-.dropdown-content-cart{
-  justify-content: center;
-  display: none;
-  position: absolute;
-  min-width: 130px;
-  background-color: rgb(240, 241, 241);
-  box-shadow: 0 8px 16px 0 rgba(124, 119, 119, 0.2);
-  z-index: 1;
+.dropdown-content-cart {
+    justify-content: center;
+    display: none;
+    position: absolute;
+    min-width: 130px;
+    background-color: rgb(240, 241, 241);
+    box-shadow: 0 8px 16px 0 rgba(124, 119, 119, 0.2);
+    z-index: 1;
 }
 
 /**/
@@ -355,7 +354,7 @@ span a:hover {
 }
 .cart-row {
     display: flex;
-    margin: .5rem;
+    margin: 0.5rem;
 }
 
 .cart-item {
@@ -376,7 +375,7 @@ span a:hover {
 
 .cart-item-title {
     color: #004e98;
-    margin-left: .5em;
+    margin-left: 0.5em;
     font-size: 1.2em;
 }
 
@@ -389,9 +388,9 @@ span a:hover {
 .btn-danger {
     color: white;
     background-color: #CC4C4C;
-    padding: .3rem;
+    padding: 0.3rem;
     border: none;
-    border-radius: .3em;
+    border-radius: 0.3em;
     font-weight: 600;
     cursor: pointer;
 }
@@ -405,7 +404,7 @@ span a:hover {
     padding: 0;
     text-align: center;
     font-size: 1.2em;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
 }
 
 .cart-row:last-child {
@@ -437,12 +436,26 @@ span a:hover {
 .btn-purchase {
     float: right;
     background-color: #ed4949;
-    padding: .5rem;
+    padding: 0.5rem;
     border-radius: 10px;
     color: #fff;
-    border: none;  
+    border: none;
     margin: 1rem;
     font-size: 1em;
     cursor: pointer;
 }
 
+@media(max-width: 900px) {
+    .dropbtn:hover,
+    .dropbtn_:hover,
+    .dropbtn-user:hover,
+    .dropbtn-favorite:hover,
+    .dropbtn-cart:hover {
+        border-top: none;
+        border-bottom: none;
+        padding: none;
+    }
+    .angle{
+        margin: 0;
+    }
+}

@@ -58,3 +58,20 @@
        }
    }
 }
+
+@media(max-width: 900px) {
+    .newsletter{
+        .news-container{
+            width: 90%;
+            h1{
+                padding: 0.3rem;
+                font-size: 1.5rem;
+            }
+            form{
+                input[type=text]{
+                    width: 60%;
+                } 
+            }
+        }
+    }
+}
