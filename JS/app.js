@@ -23,7 +23,7 @@ function scrollFunction() {
 
 /*Favorite*/
 var noti = document.querySelector(".dropbtn-favorite");
-var select = document.querySelector(".dropdown-content-favorite");
+//var select = document.querySelector(".dropdown-content-favorite");
 var button = document.querySelectorAll("#favorite");
 for (var but of button) {
   but.addEventListener("click", (e) => {
@@ -32,7 +32,7 @@ for (var but of button) {
     noti.classList.add("zero");
 
 			var image = e.target.parentNode.querySelector('#item-image');
-      var span = e.target.parentNode.querySelector('span');
+      var span = e.target.parentNode.querySelector('.dropdown-content-favorite');
 			var s_image = image.cloneNode(false);
 			span.appendChild(s_image);
 			span.classList.add("active");
@@ -122,11 +122,11 @@ function quantityChanged(event) {
 }
 
 function addToCartClicked(event) {
-  var button = event.target;
+  var button = event.currentTarget;
   var watchItem = button.parentElement.parentElement;
   var title = watchItem.querySelectorAll("#item-title")[0].innerText;
   var price = watchItem.querySelectorAll("#item-price")[0].innerText;
-  var imageSrc = watchItem.querySelectorAll("#item-image")[0].src;
+  var imageSrc = watchItem.querySelectorAll('#item-image')[0].src;
   addItemToCart(title, price, imageSrc);
   updateCartTotal();
 }
