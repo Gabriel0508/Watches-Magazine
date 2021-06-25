@@ -145,8 +145,10 @@
 @media (max-width: 900px) {
   .navbar {
     height: 8vh;
+    background: none;
   }
   .navbar .nav-container {
+    margin: 1rem;
     width: 100%;
     height: 8vh;
   }
@@ -156,7 +158,7 @@
   .navbar .nav-container .search {
     display: none;
   }
-  .navbar .nav-container .number {
+  .navbar .nav-container .number a {
     font-size: 1rem;
   }
 }

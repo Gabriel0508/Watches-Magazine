@@ -460,4 +460,8 @@ span a:hover {
     .angle{
         margin: 0;
     }
+    .dropbtn,
+    .dropbtn_{
+    display: none;
+    }
 }
