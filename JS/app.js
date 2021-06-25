@@ -30,21 +30,6 @@ for (var but of button) {
     var add = Number(noti.getAttribute("data-count") || 0);
     noti.setAttribute("data-count", add + 1);
     noti.classList.add("zero");
-
-			var image = e.target.parentNode.querySelector('#item-image');
-      var span = e.target.parentNode.querySelector('.dropdown-content-favorite');
-			var s_image = image.cloneNode(false);
-			span.appendChild(s_image);
-			span.classList.add("active");
-      setTimeout(()=>{
-				span.classList.remove("active");
-				span.removeChild(s_image);
-			}, 500); 
-		
-    var parent = e.target.parentNode;
-    var clone = parent.cloneNode(true);
-    select.appendChild(clone);
-    clone.lastElementChild.innerText = "Add to cart";
   });
 }
 
